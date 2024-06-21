@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+/* Header start section */
+.header {
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 40px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1;
+}
+
+.header .logo {
+    height: 40px;
+    padding-left: 30px;
+}
+
+/* Nav bar section */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 40px;
+    position: relative;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #088178;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -9px;
+    left: 32px;
+}
+
+.mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+
+.hero {
+    background: #E3E6F3;
+    background-image: url(img/about/a3.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.hero h4 {
+    font-size: 60px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: #088178;
+}
+
+.hero p {
+    font-size: 23px;
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.hero button {
+    background-image: url(img/button.png);
+    border: none;
+    padding: 14px 80px 14px 65px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    color: #088178;
+}
+
+
+/*  News letter section */
+
+.news_letter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #041e42;
+    color: white;
+    width: 100%;
+    height: 140px;
+    padding: 55px;
+}
+
+.news_letter .news_letter_text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.news_letter .news_letter_text h3 {
+    color: gray;
+    font-weight: 400;
+}
+
+.news_letter .news_letter_text span {
+    color: yellow;
+}
+
+.news_letter_email .email_container {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.news_letter_email #email {
+    width: 350px;
+    padding: 24px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.news_letter_email button {
+    padding: 24px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: rgb(13, 13, 242);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    background-color: #088178;
+    color: white;
+}
+
+/* Footer section */
+
+/* Section1 */
+.footer_container {
+    width: 100%;
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_contact_section1 h4 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 27px;
+}
+
+.footer_contact_section1 span {
+    color: gray;
+}
+
+.footer_contact_section1 p {
+    cursor: pointer;
+    margin: 17px 0;
+}
+
+.footer_contact_section1 .section1_icons {
+    margin-top: 24px;
+}
+
+.footer_contact_section1 .section1_icons i {
+    cursor: pointer;
+    margin: 0 3px;
+    transition: color 0.3s ease;
+    /* Adding transition for smooth color change */
+}
+
+.footer_contact_section1 .section1_icons i:hover {
+    filter: brightness(1.5);
+}
+
+/* Section 2 & Section 3*/
+
+.footer_contact_section2,
+.footer_contact_section3,
+.footer_contact_section4 {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer_contact_section2 h4,
+.footer_contact_section3 h4 {
+    font-weight: 400;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.footer_contact_section2 ul li,
+.footer_contact_section3 ul li {
+    list-style: none;
+    margin: 22px 0;
+    color: gray;
+}
+
+/* Section 4 */
+.footer_contact_section4 h4 {
+    font-weight: 400;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.footer_contact_section4 p {
+    color: gray;
+    margin: 10px 0px;
+}
+
+.footer_contact_section4 img {
+    border: 1px solid #088178;
+    margin: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .end_footer_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+/*  SHOP PAGE DESIGN */
+.shop_page_hero_section {
+    background-image: url(img/banner/b19.jpg);
+    height: 40vh;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.shop_page_hero_section h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.shop_page_hero_section p {
+    font-size: 18px;
+}
+
+
+/* Blog page design */
+
+.blog_section {
+    padding: 150px 150px 0 150px;
+}
+
+.blog_section .blogs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 0 0 85px 50px;
+}
+
+.blog_section .blog_image {
+    width: 50%;
+    margin-right: 40px;
+}
+
+
+.blog_section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog_text h2 {
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+
+.blog_text p {
+    width: 400px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.blog_text a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.blog_text a::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 7px;
+    right: -60px;
+}
+
+.blog_text a:hover {
+    color: #088178;
+}
+
+.blog_text a:hover::after {
+    background-color: #088178;
+}
+
+
+.blog_section .blogs h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+/* Pagination section */
+.pagintaion_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagintaion_section a {
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    margin: 20px 4px;
+    padding: 17px;
+    background-color: #088178;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Making it responsive */
+
+
+/* FOR MEDIUM SCREEN DEVIVES LIKE IPAD  */
+@media (max-width: 799px) {
+
+    /* Nav bar section responsive */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        /* Initial position is off-screen to the right */
+        height: 100vh;
+        width: 400px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    .navbar li {
+        margin-bottom: 25px;
+    }
+
+    .navbar.active {
+        right: 0;
+        /* When active, move to the right to become visible */
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        color: black;
+    }
+
+    #remove_mobile_bag {
+        display: none;
+    }
+
+    /* Main hero section responsive */
+
+    .hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 47%;
+    }
+
+
+    /* News letter section */
+    .news_letter {
+        flex-direction: column;
+        text-align: left;
+        /* Change this to "left" for left alignment */
+        align-items: flex-start;
+        /* Change this to "flex-start" */
+        height: 250px;
+
+    }
+
+    .news_letter .news_letter_text h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .news_letter .news_letter_text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .news_letter_email #email {
+        width: 100%;
+        /* Make the input full-width within the newsletter section */
+        padding: 21px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .news_letter_email button {
+        margin-top: 10px;
+        width: 150px;
+        padding: 24px;
+    }
+
+
+    /* Footer section */
+
+    .footer_container {
+        width: 100%;
+        padding: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer_contact_section1 {
+        margin-right: 20px;
+    }
+
+    .footer_contact_section2 {
+        margin-left: 20px;
+    }
+
+    .footer_contact_section3 {
+        margin-left: 20px;
+    }
+
+    .footer_contact_section4 {
+        margin-top: 40px;
+    }
+
+    .footer_contact_section1 span {
+        font-size: 14px;
+    }
+
+    /* Blog section */
+    .blog_section {
+        padding: 100px 50px 0 50px;
+    }
+
+    .blog_text h2 {
+        font-size: 30px;
+    }
+
+    .blog_text p {
+        font-size: 22px;
+        color: gray;
+    }
+    .blog_text a {
+
+        font-size: 20px;
+       
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 477px) {
+
+    /*  Nav bar section */
+    .header {
+        padding: 10px;
+        /* Adjust the padding as needed */
+    }
+
+    .logo {
+        float: left;
+        margin-left: -20px;
+    }
+
+    .navbar {
+        float: right;
+        margin-top: 10px;
+        /* Adjust the margin as needed */
+    }
+
+    /* Hero section */
+
+    .hero {
+
+        padding: 0 2px;
+        background-position: 55%;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero h4 {
+        font-size: 27px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 20px;
+
+    }
+
+    .feature_box {
+        width: calc(50% - 40px);
+        /* Calculate width for two features in a row with spacing */
+    }
+
+    /* Product section */
+
+    .products_text h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .products_text span {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .allproduct_cart .product_cart,
+    .new_arrival_all_product_cart .new_arrival_product_cart {
+        width: calc(100% - 40px);
+        margin: 15px;
+    }
+
+    /* Below product banner */
+
+    .below_product_banner {
+        height: 350px;
+    }
+
+    .below_product_banner h2 {
+
+        font-size: 38px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+
+    /* New arrival product text */
+    .new_arrivals .new_arrival_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .new_arrival_text h1 {
+        font-size: 40px;
+    }
+
+    .new_arrival_text span {
+        font-size: 30px;
+    }
+
+    /* Banner section */
+    .banner_section {
+        width: 90%;
+        margin: 40px 5%
+    }
+
+    .banner_section .banner_box {
+        height: 40vh;
+    }
+
+    /* lower banner section */
+
+
+    .lower_banner_section {
+        /* margin: 0 3%; Adjust margin as needed */
+        flex-wrap: wrap;
+        /* Allow banners to wrap to the next line */
+        padding: 0 0 0 0;
+    }
+
+    .lower_banner {
+        flex: 0 0 calc(100% - 40px);
+        /* Adjusted width for single banner with spacing */
+        margin: 0 0 10px;
+        /* Adjust margin for spacing between banners */
+    }
+
+    /* News letter section */
+
+    .news_letter {
+        justify-content: flex-start;
+        padding: 40px 30px;
+    }
+
+    .news_letter .news_letter_text h2 {
+        font-size: 25px;
+    }
+
+    .news_letter .news_letter_text h3 {
+        font-size: 17px;
+    }
+
+    .news_letter_email #email {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .news_letter_email button {
+        margin-top: 10px;
+        width: 100px;
+        padding: 22px;
+    }
+
+    /* Footer section */
+
+    .footer_container {
+        padding: 20px;
+    }
+
+    .footer_contact_section1 .section1_icons {
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+
+    .footer_contact_section2 {
+
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .footer_contact_section3 {
+        padding-top: 40px;
+    }
+
+    /* Blog section */
+
+    .blog_section {
+        padding: 100px 90px 0 20px;
+    }
+
+    .blog_section .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog_section .blog_image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .blog_text p {
+        width: 250px;
+        color: gray;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,743 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+/* Header start section */
+.header {
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 40px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1;
+}
+
+.header .logo {
+    height: 40px;
+    padding-left: 30px;
+}
+
+/* Nav bar section */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 40px;
+    position: relative;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #088178;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -9px;
+    left: 32px;
+}
+
+.mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/*  ABOUE US PAGE DESIGN */
+.about_page_hero_section {
+    background-image: url(img/about/banner.png);
+    height: 40vh;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.about_page_hero_section h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about_page_hero_section p {
+    font-size: 18px;
+}
+
+/* About page main hero section */
+.main_section_about {
+    width: 100%;
+    display: flex;
+    padding: 80px;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.main_section_about img {
+    width: 500px;
+    margin-right: 50px;
+}
+
+.main_section_about .main_section_about_text {
+    width: 100%;
+}
+
+
+.main_section_about .main_section_about_text h1 {
+    font-size: 50px;
+    font-weight: 550;
+    margin-bottom: 25px;
+}
+
+.main_section_about .main_section_about_text .para1 {
+    color: gray;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.main_section_about .main_section_about_text .para1 {
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.main_section_about_text abbr {
+    font-size: 20px;
+}
+
+.main_section_about .main_section_about_text marquee {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+
+/* Hero section download app section */
+
+.download_app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.download_app h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.download_app h1 a {
+    color: purple;
+}
+
+.download_app .video {
+    width: 70%;
+    height: 100%;
+    margin-top: 30px auto 0 auto;
+}
+
+.download_app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Features section same as main page */
+
+.features {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.feature_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 65px 40px 30px 40px;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    width: 80%;
+    padding: 25px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feature_box:hover {
+    box-shadow: 10px 10px 45px rgba(70, 62, 221, 0.1);
+
+}
+
+.feature_box img {
+    width: 100%;
+}
+
+.feature_box span {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.box1 {
+    margin-left: 40px;
+}
+
+.box6 {
+    margin-right: 40px;
+}
+
+.feature_box .box1_text {
+    background-color: #fddde4;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    padding: 2px;
+}
+
+.feature_box .box2_text {
+    background-color: #cdebbc;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    padding: 2px;
+}
+
+.feature_box .box3_text {
+    background-color: #d1e8f2;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    padding: 2px;
+}
+
+
+.feature_box .box4_text {
+    background-color: #cdd4f8;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    padding: 2px;
+}
+
+.feature_box .box5_text {
+    background-color: #f6dbf6;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    padding: 2px;
+}
+
+.feature_box .box6_text {
+    background-color: #fff2e5;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    padding: 2px;
+}
+
+/*  News letter section */
+
+.news_letter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #041e42;
+    color: white;
+    width: 100%;
+    height: 140px;
+    padding: 55px;
+}
+
+.news_letter .news_letter_text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.news_letter .news_letter_text h3 {
+    color: gray;
+    font-weight: 400;
+}
+
+.news_letter .news_letter_text span {
+    color: yellow;
+}
+
+.news_letter_email .email_container {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.news_letter_email #email {
+    width: 350px;
+    padding: 24px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.news_letter_email button {
+    padding: 24px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: rgb(13, 13, 242);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    background-color: #088178;
+    color: white;
+}
+
+/* Footer section */
+
+/* Section1 */
+.footer_container {
+    width: 100%;
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_contact_section1 h4 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 27px;
+}
+
+.footer_contact_section1 span {
+    color: gray;
+}
+
+.footer_contact_section1 p {
+    cursor: pointer;
+    margin: 17px 0;
+}
+
+.footer_contact_section1 .section1_icons {
+    margin-top: 24px;
+}
+
+.footer_contact_section1 .section1_icons i {
+    cursor: pointer;
+    margin: 0 3px;
+    transition: color 0.3s ease;
+    /* Adding transition for smooth color change */
+}
+
+.footer_contact_section1 .section1_icons i:hover {
+    filter: brightness(1.5);
+}
+
+/* Section 2 & Section 3*/
+
+.footer_contact_section2,
+.footer_contact_section3,
+.footer_contact_section4 {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer_contact_section2 h4,
+.footer_contact_section3 h4 {
+    font-weight: 400;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.footer_contact_section2 ul li,
+.footer_contact_section3 ul li {
+    list-style: none;
+    margin: 22px 0;
+    color: gray;
+}
+
+/* Section 4 */
+.footer_contact_section4 h4 {
+    font-weight: 400;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.footer_contact_section4 p {
+    color: gray;
+    margin: 10px 0px;
+}
+
+.footer_contact_section4 img {
+    border: 1px solid #088178;
+    margin: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .end_footer_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+/* Making it responsive */
+
+
+/* FOR MEDIUM SCREEN DEVIVES LIKE IPAD  */
+@media (max-width: 799px) {
+
+    /* Nav bar section responsive */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        /* Initial position is off-screen to the right */
+        height: 100vh;
+        width: 400px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    .navbar li {
+        margin-bottom: 25px;
+    }
+
+    .navbar.active {
+        right: 0;
+        /* When active, move to the right to become visible */
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        color: black;
+    }
+
+    #remove_mobile_bag {
+        display: none;
+    }
+
+    /* Main hero section responsive */
+
+    .hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 47%;
+    }
+
+    /*  Features section */
+
+    .features {
+        flex-wrap: wrap;
+        /* Allow flex items to wrap to the next line */
+        justify-content: center;
+        /* Distribute items evenly on each line */
+    }
+
+    .feature_box {
+
+        margin: 20px;
+        /* Adjust margin for better spacing */
+        width: calc(33.33% - 40px);
+        /* Calculate width for three features in a row with spacing */
+
+    }
+
+    /* About page */
+
+    .main_section_about img {
+        width: 300px;
+        margin-right: 50px;
+    }
+
+    .main_section_about {
+        padding: 40px;
+    }
+
+    /* News letter section */
+    .news_letter {
+        flex-direction: column;
+        text-align: left;
+        /* Change this to "left" for left alignment */
+        align-items: flex-start;
+        /* Change this to "flex-start" */
+        height: 250px;
+
+    }
+
+    .news_letter .news_letter_text h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .news_letter .news_letter_text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .news_letter_email #email {
+        width: 100%;
+        /* Make the input full-width within the newsletter section */
+        padding: 21px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .news_letter_email button {
+        margin-top: 10px;
+        width: 150px;
+        padding: 24px;
+    }
+
+
+    /* Footer section */
+
+    .footer_container {
+        width: 100%;
+        padding: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer_contact_section1 {
+        margin-right: 20px;
+    }
+
+    .footer_contact_section2 {
+        margin-left: 20px;
+    }
+
+    .footer_contact_section3 {
+        margin-left: 20px;
+    }
+
+    .footer_contact_section4 {
+        margin-top: 40px;
+    }
+
+    .footer_contact_section1 span {
+        font-size: 14px;
+    }
+
+
+}
+
+/* For mobile devices */
+@media (max-width: 477px) {
+
+    /*  Nav bar section */
+    .header {
+        padding: 10px;
+        /* Adjust the padding as needed */
+    }
+
+    .logo {
+        float: left;
+        margin-left: -20px;
+    }
+
+    .navbar {
+        float: right;
+        margin-top: 10px;
+        /* Adjust the margin as needed */
+    }
+
+    /* Hero section */
+
+    .hero {
+
+        padding: 0 2px;
+        background-position: 55%;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero h4 {
+        font-size: 27px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 20px;
+
+    }
+
+    .feature_box {
+        width: calc(50% - 40px);
+        /* Calculate width for two features in a row with spacing */
+    }
+
+
+
+    /* About section */
+
+    .main_section_about {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main_section_about img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .main_section_about_text {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .main_section_about_text h1 {
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        white-space: nowrap;
+        text-align: left;
+        padding-left: 10px;
+
+    }
+
+    .main_section_about .main_section_about_text .para1 {
+
+        font-size: 19px;
+        margin-bottom: 30px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .main_section_about_text abbr,
+    .main_section_about_text marquee {
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .download_app h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .download_app .video {
+        width: 90%;
+       margin-bottom: 20px;
+    }
+    /* News letter section */
+
+    .news_letter {
+        justify-content: flex-start;
+        padding: 40px 30px;
+    }
+
+    .news_letter .news_letter_text h2 {
+        font-size: 25px;
+    }
+
+    .news_letter .news_letter_text h3 {
+        font-size: 17px;
+    }
+
+    .news_letter_email #email {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .news_letter_email button {
+        margin-top: 10px;
+        width: 100px;
+        padding: 22px;
+    }
+
+    /* Footer section */
+
+    .footer_container {
+        padding: 20px;
+    }
+
+    .footer_contact_section1 .section1_icons {
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+
+    .footer_contact_section2 {
+
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .footer_contact_section3 {
+        padding-top: 40px;
+    }
+
+
+}
